@@ -22,6 +22,7 @@
 }
 
 body {
+    width: 100%;
     background: linear-gradient(90deg, #FFCBC3FF 0%, #F2C1F1FF 99.11452487699741%);
 }
 
@@ -1252,6 +1253,7 @@ body {
 }
 
 .screen10 .four {
+    position: relative;
     width: 60%;
     background: #3B3D53;
     display: flex;
@@ -1607,7 +1609,7 @@ p {
     color: #1b1b1b;
 }
 
-.form .five label{
+.form .five label {
     width: 30%;
     padding: .3em;
     border: 1px solid #141414;
@@ -1616,14 +1618,14 @@ p {
 
 /* Part 2 */
 
-.screen11 .part2{
+.screen11 .part2 {
     position: relative;
     text-align: center;
     margin-top: 2em;
     display: none;
 }
 
-.screen11 .part2 .div{
+.screen11 .part2 .div {
     margin-top: 3.5em;
 }
 
@@ -1641,7 +1643,7 @@ p {
 }
 
 /* Form question */
-.screen11 .part2 .form2{
+.screen11 .part2 .form2 {
     position: absolute;
     width: 45%;
     top: 0;
@@ -1692,12 +1694,14 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 1em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.part2 .form2 .two div{
+.part2 .form2 .two div {
     color: #1b1b1b;
 }
+
 .part2 .form2 .two div input {
     width: 100%;
     padding: 1em;
@@ -1734,4 +1738,399 @@ footer p {
 
 
 
-@media (max-width : 900px) {}
+@media (max-width : 890px) {
+
+    .link {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    .screen10 .three .content .card .body .freeHidden {
+        margin-top: 3.2em;
+        padding: 1em .6em;
+    }
+
+}
+
+@media (max-width : 710px) {
+
+    .screen1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: .5em;
+    }
+
+    .screen1 .left .img1 {
+        width: 90%;
+    }
+
+    .screen1 .left .img2 {
+        width: 12em;
+        left: 0.6em;
+        top: 4.5em;
+        rotate: -20deg;
+    }
+
+    .screen1 .left .img3 {
+        width: 12em;
+        bottom: 1.5em;
+        right: 5em;
+        rotate: 15deg;
+    }
+
+    .right .title h2 {
+        position: relative;
+        font-size: 44px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .right .title h2 strong {
+        font-size: 22px;
+    }
+
+    .right p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .right a {
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width : 500px) {
+
+    .fixed {
+        width: 500px;
+    }
+
+    .logo-btn {
+        padding: .5em;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .logo-btn .logo img {
+        width: 7em;
+    }
+
+    .screen1 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: .1em;
+        padding-bottom: 2em;
+    }
+
+    .screen1 .left {
+        padding-top: 2em;
+        padding-left: 0;
+        padding-bottom: .8em;
+    }
+
+    .screen1 .left .img1 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .screen1 .left .img2 {
+        width: 7em;
+        border: 3px solid white;
+        border-radius: .3em;
+        left: 0.3em;
+        top: 4.5em;
+        rotate: -20deg;
+    }
+
+    .screen1 .left .img3 {
+        width: 7em;
+        border: 3px solid white;
+        bottom: 1.5em;
+        right: 1em;
+        rotate: 15deg;
+    }
+
+
+    .screen2 {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        padding: .4em;
+    }
+
+    .screen3 {
+        background: #2A2C3E;
+        padding: 1em;
+        font-family: 'lexend', sans-serif;
+        padding-bottom: 1.5em;
+    }
+
+    .screen3 h1 {
+        font-size: 45px;
+        margin-top: .5em;
+    }
+
+    .screen4 {
+        padding: .5em;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 1.5em;
+    }
+
+    .screen4 .left .top {
+        margin-top: .5em;
+    }
+
+    .screen4 .left .top h1 {
+        color: white;
+        font-size: 50px;
+        font-weight: 200;
+    }
+
+    .screen4 .left .bottom {
+        margin-top: 1em;
+        margin: 0 auto;
+    }
+
+    .screen4 .right {
+        width: 100%;
+        margin-top: .5em;
+    }
+
+    .screen4 .right img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .screen5 {
+        padding: 1em;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .screen5 .left .img1 {
+        border-radius: 0;
+    }
+
+    .screen5 .left .img2,
+    .screen5 .left .img3 {
+        display: none;
+    }
+
+    .screen5 .right .top h1 {
+        margin-top: 0;
+    }
+
+    .screen5 .right a {
+        margin-top: .5em;
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+
+    .screen5 .panel {
+        width: 100%;
+        right: 0;
+        padding: 1em;
+        display: none;
+    }
+
+    .screen6 {
+        padding: 1em;
+        padding-bottom: 1em;
+    }
+
+    .screen6 .top h1 {
+        margin-top: .5em;
+        font-size: 45px;
+    }
+
+    .screen6 .content {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        gap: 1em;
+    }
+
+    .screen7 {
+        padding-left: 1em;
+        grid-template-columns: repeat(1, 2fr);
+        padding-top: 1em;
+    }
+
+    .screen7 .left .content7 .elt img {
+        width: 50%;
+    }
+
+    .screen7 .right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .screen7 .right .content {
+        width: 50%;
+        text-align: center;
+    }
+
+    .screen7 .right .content img {
+        width: 50%;
+    }
+
+    .screen7 .right .top .img1,
+    .screen7 .right .top .img2 {
+        display: none;
+    }
+
+    .screen8 {
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    .screen8 .top {
+        width: 90%;
+        margin-top: 1em;
+    }
+
+    .screen8 .swiper .swiper-slide {
+        padding: .3em;
+    }
+
+    .screen8 .swiper .swiper-slide div {
+        margin-top: .5em;
+        font-size: 18px;
+    }
+
+    .screen8 .swiper .swiper-slide p {
+        margin-top: .8em;
+        word-spacing: 2px;
+    }
+
+    .screen9 {
+        padding: .6em;
+        padding-bottom: 1.5em;
+    }
+
+    .screen9 .div {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        padding-top: .8em;
+    }
+
+    .screen9 h1 {
+        margin-top: .9em;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+
+    .screen9 .div .left img {
+        border-radius: 0;
+    }
+
+    .screen9 .div .right .top p {
+        text-align: left;
+    }
+
+    .screen9 .div .right .bottom {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .screen10 {
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    .screen10 .one {
+        margin-top: 1em;
+        padding: 1em;
+    }
+
+    .screen10 .one .swiper {
+        margin-top: 1em;
+    }
+
+    .screen10 .swiper .swiper-slide {
+        padding: .5em;
+        border-radius: 2%;
+    }
+
+    .screen10 .swiper .swiper-wrapper .swiper-slide {
+        border-radius: 0;
+    }
+
+    .screen10 .three {
+        margin-top: 1em;
+        margin: 5%;
+
+    }
+
+    .screen10 .three .content {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .screen10 .four {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .screen10 .four img {
+        position: relative;
+        width: 35%;
+        margin-top: -5em;
+    }
+
+    .screen10 .five {
+        width: 90%;
+    }
+
+    .screen10 .five h1 {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .screen11 .part1 .search {
+        display: flex;
+        gap: .5em;
+    }
+
+    .screen11 .part1 .search {
+        display: flex;
+        gap: .5em;
+        justify-content: center;
+    }
+
+    .screen11 .part1 .search select {
+        width: 100%;
+    }
+
+    .screen11 .part1 .search input {
+        width: 100%;
+    }
+
+    .screen11 .part1 .search label {
+        margin-left: -2em;
+    }
+
+    .screen11 .part1 .content .box {
+        margin-top: 1.4em;
+        padding: 1.4em;
+        border: 1.5px solid #4D3975;
+        border-radius: 13px;
+    }
+
+    .form {
+        width: 95%;
+        left: 2.5%;
+    }
+
+    .screen11 .part2 .form2 {
+        position: absolute;
+        width: 100%;
+        left: 1.5%;
+    }
+}
