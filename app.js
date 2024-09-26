@@ -196,12 +196,12 @@ AfficheSlider1();
 
 let width = window.innerWidth;
 
-console.log(width)
+// console.log(width);
 
 const swiper1 = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 30,
-    slidesPerView: width <= 600 ? 1 : 3,
+    slidesPerView: width >= 600 && width <= 800 ? 2 : (width <= 600) ? 1 : 3,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

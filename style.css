@@ -1749,6 +1749,11 @@ footer p {
         margin-top: 3.2em;
         padding: 1em .6em;
     }
+                .screen9 .div .right .bottom a{
+                    margin-top: .5em;
+                    text-align: center;
+                    font-size: 14px;
+                }
 
 }
 
@@ -1798,13 +1803,95 @@ footer p {
         margin: 0 auto;
     }
 
+        .screen9 .div .right .bottom a {
+            margin-top: .5em;
+            text-align: left;
+            font-size: 12.5px;
+            padding: .8em;
+        }
 
+
+}
+
+@media (max-width : 600px) {
+
+    .fixed {
+        width: 100%;
+    }
+        .screen9 {
+            padding: .6em;
+            padding-bottom: 1.5em;
+        }
+    
+        .screen9 .div {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            padding-top: .8em;
+        }
+    
+        .screen9 h1 {
+            margin-top: .9em;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 1.4em;
+        }
+    
+        .screen9 .div .left img {
+            border-radius: 0;
+        }
+    
+        .screen9 .div .right .top p {
+            text-align: left;
+        }
+    
+        .screen9 .div .right .bottom {
+            margin-top: 1em;
+            text-align: center;
+        }
+}
+
+@media (max-width : 440px) {
+
+    body {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .fixed {
+        width: 100%;
+    }
+
+    .screen11 .part1 .pagination {
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .screen11 .part1 .pagination div {
+        gap: 1em;
+    }
+
+    .screen11 .part1 .pagination div .active {
+        padding: .3em .5em;
+        font-size: 16px;
+    }
+
+    .screen11 .part1 .pagination div p:hover {
+        padding: .3em .5em;
+        font-size: 16px;
+    }
+
+    .screen11 .part1 .content .box_c {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: start;
+    }
 }
 
 @media (max-width : 500px) {
 
     .fixed {
-        width: 500px;
+        width: 100%;
     }
 
     .logo-btn {
