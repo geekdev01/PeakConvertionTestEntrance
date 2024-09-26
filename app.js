@@ -193,10 +193,15 @@ AfficheSlider1();
 
 
 //Configurattion des slide/carousel grace a l'objet Swiper de la librairie SwiperJS 
-const swiper = new Swiper('.swiper', {
+
+let width = window.innerWidth;
+
+console.log(width)
+
+const swiper1 = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 30,
-    slidesPerView: 3,
+    slidesPerView: width <= 600 ? 1 : 3,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -207,6 +212,8 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     }
 });
+
+
 
 
 //Declaration des elements pour la div screen6
