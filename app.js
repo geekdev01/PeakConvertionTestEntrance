@@ -430,10 +430,21 @@ let answers = document.querySelectorAll('.answer');
 questions.forEach((question, index) => {
     question.addEventListener('click', () => {
         answers[index].style.display = answers[index].style.display === 'block' ? 'none' : 'block';
+        question.lastElementChild.innerHTML = answers[index].style.display === 'block' ? '<p class="btn">-</p>' : '<p class="btn">+</p>';
         // answers[index].classList.toggle('active');
     });
 });
 
+//Pour faire disparaitre un bouton et afficher un  autre lorsque l'on clique dessus
+let firsts = document.querySelectorAll('.first');
+let seconds = document.querySelectorAll('.second');
+
+firsts.forEach((first, index) => {
+    first.addEventListener('click', () => {
+        first.style.display = 'none';
+        seconds[index].style.display = 'block';
+    });
+});
 
 
 //Element pour la section screen11
@@ -496,7 +507,7 @@ function AfficheElement11() {
                             <span style="font-weight: bold; font-size: 26px;">&#9733 &#9733 &#9733 &#9733 &#9733</span>
                             <h1 style="margin-top: .5em;; text-transform: uppercase;">${elt.h1}</h1>
                             <p style="font-size: 18px; color: #000;margin-top: .2em;font-weight: 300">${elt.p}</p>
-                            <img src="assets/images/${elt.image}" style="width:15%; margin-top: .7em;" alt="">
+                            <img src="assets/images/${elt.image}" alt="">
                             <p style=" margin-top: .8em;"><strong style="font-size: 15px;">WAS THIS REVIEW HELPFUL</strong> <span class="like" style="cursor: pointer; font-size: 15px;">like</span> <i style="font-size: 15px; font-weight: 400;">${elt.like} peoples found this review helpful</i></p>
                         </div>
 

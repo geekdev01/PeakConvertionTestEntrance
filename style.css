@@ -1325,7 +1325,7 @@ body {
 
 .screen10 .five .questions .question .answer {
     margin-top: 1em;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
     transition: opacity .5s;
     display: none;
@@ -1457,6 +1457,11 @@ body {
     display: flex;
     gap: 2em;
     justify-content: start;
+}
+
+.screen11 .part1 .content .box_c div img {
+    width: 15%;
+    margin-top: .7em;
 }
 
 
@@ -1738,175 +1743,230 @@ footer p {
 
 
 
-@media (max-width : 890px) {
+/* RESPONSIVE START */
+@media (max-width : 900px) {
 
     .link {
         font-size: 16px;
         padding: 13px;
     }
 
-    .screen10 .three .content .card .body .freeHidden {
-        margin-top: 3.2em;
-        padding: 1em .6em;
-    }
-                .screen9 .div .right .bottom a{
-                    margin-top: .5em;
-                    text-align: center;
-                    font-size: 14px;
-                }
-
-}
-
-@media (max-width : 710px) {
-
-    .screen1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: .5em;
+    .screen5 .right .top h1 {
+        margin-top: .1em;
+        font-size: 38px;
     }
 
-    .screen1 .left .img1 {
-        width: 90%;
+    .screen6 .content .elt img {
+        margin: 0 auto;
+        width: 40%;
     }
 
-    .screen1 .left .img2 {
-        width: 12em;
-        left: 0.6em;
-        top: 4.5em;
-        rotate: -20deg;
+    .screen7 .left .content7 .elt img {
+        width: 50%;
     }
 
-    .screen1 .left .img3 {
-        width: 12em;
-        bottom: 1.5em;
-        right: 5em;
-        rotate: 15deg;
+    .screen7 .left .content7 .elt h2 {
+        font-size: 26px;
+        margin-top: .8em;
     }
 
-    .right .title h2 {
-        position: relative;
-        font-size: 44px;
-        font-weight: 400;
-        text-align: center;
+    .screen7 .left .content7 .elt p {
+        font-size: 16px;
+        margin-top: .7em;
+        font-weight: 300;
+
     }
 
-    .right .title h2 strong {
+    .screen7 .right .content img {
+        width: 55%;
+    }
+
+    .screen7 .right .content h2 {
+        margin-top: .8em;
+        font-size: 26px;
+    }
+
+    .screen7 .right .content p {
+        font-size: 16px;
+        margin-top: .7em;
+        font-weight: 300;
+    }
+
+    .screen9 .div .right {
+        margin-top: -3em;
+    }
+
+    .screen9 .div .right .top h1 {
+        margin-top: .6em;
         font-size: 22px;
     }
 
-    .right p {
-        text-align: center;
+    .screen9 .div .right .top p {
+        font-size: 15px;
+    }
+
+    .screen10 .three .content .card .body .freeHidden {
+        margin-top: 4.9em;
+        padding: 1em .6em;
+    }
+
+    .screen10 .three .content .card .body .free {
+        margin-top: 2.3em;
+    }
+
+    .screen10 .three .content .card .body .after img {
+        width: 35%;
+    }
+
+    .screen10 .three .content .card .body .btn h2 {
+        padding: .35em;
         font-size: 18px;
+        font-weight: 500;
     }
 
-    .right a {
-        margin: 0 auto;
+    .screen9 .div .right .bottom a {
+        margin-top: .5em;
+        text-align: center;
+        font-size: 14px;
     }
 
-        .screen9 .div .right .bottom a {
-            margin-top: .5em;
-            text-align: left;
-            font-size: 12.5px;
-            padding: .8em;
-        }
-
-
-}
-
-@media (max-width : 600px) {
-
-    .fixed {
-        width: 100%;
-    }
-        .screen9 {
-            padding: .6em;
-            padding-bottom: 1.5em;
-        }
-    
-        .screen9 .div {
-            display: grid;
-            grid-template-columns: repeat(1, 2fr);
-            padding-top: .8em;
-        }
-    
-        .screen9 h1 {
-            margin-top: .9em;
-            font-size: 40px;
-            font-weight: 300;
-            line-height: 1.4em;
-        }
-    
-        .screen9 .div .left img {
-            border-radius: 0;
-        }
-    
-        .screen9 .div .right .top p {
-            text-align: left;
-        }
-    
-        .screen9 .div .right .bottom {
-            margin-top: 1em;
-            text-align: center;
-        }
-}
-
-@media (max-width : 440px) {
-
-    body {
-        width: 100%;
-        object-fit: cover;
+    .screen10 .four {
+        width: 80%;
+        padding: .9em;
     }
 
-    .fixed {
-        width: 100%;
-    }
-
-    .screen11 .part1 .pagination {
-        gap: 1em;
-        margin-top: 2em;
-    }
-
-    .screen11 .part1 .pagination div {
-        gap: 1em;
-    }
-
-    .screen11 .part1 .pagination div .active {
-        padding: .3em .5em;
-        font-size: 16px;
-    }
-
-    .screen11 .part1 .pagination div p:hover {
-        padding: .3em .5em;
-        font-size: 16px;
+    .screen10 .five {
+        width: 80%;
+        padding: .9em;
     }
 
     .screen11 .part1 .content .box_c {
         display: flex;
-        flex-direction: column;
-        gap: 2em;
-        justify-content: start;
+        gap: 2.5em;
+    }
+
+    .screen11 .part1 .content .box_c div img {
+        width: 20%;
+    }
+
+    .form {
+        width: 95%;
+        left: 2.5%;
+    }
+
+    .screen11 .part2 .form2 {
+        position: absolute;
+        width: 100%;
+        left: 1.5%;
     }
 }
 
-@media (max-width : 500px) {
-
-    .fixed {
-        width: 100%;
+@media (max-width:810px) {
+    .screen5 .right a {
+        margin-top: 3em;
+        font-size: 20px;
+        padding: 14px 23px;
     }
 
-    .logo-btn {
-        padding: .5em;
-        justify-content: start;
-        align-items: center;
+    .screen5 .left .img2 {
+        width: 50%;
     }
 
-    .logo-btn .logo img {
-        width: 7em;
+    .screen5 .left .img3 {
+        width: 50%;
+    }
+}
+
+@media (max-width:770px) {
+    .screen2 .left .text {
+        font-size: 2.6em;
+        font-weight: 600;
+        color: white;
     }
 
-    .screen1 {
+    .screen2 .left .elt img {
+        padding: 1.3em;
+    }
+
+    .screen2 .left .elt h2 {
+        margin-top: .8em;
+        text-align: center;
+    }
+
+    .screen2 .left .elt p {
+        margin-top: .8em;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .screen2 .right div h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .screen2 .right div p {
+        font-size: 13px;
+        margin-top: 1.6em;
+        margin-bottom: 1em;
+    }
+
+    .screen4 {
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 2em;
+    }
+
+    .screen4 .left .top {
+        margin-top: .3em;
+    }
+
+    .screen4 .left .top h1 {
+        font-size: 50px;
+    }
+
+    .screen4 .right {
+        margin-top: 1em;
+    }
+
+    .screen4 .right img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .screen5 .left .img2,
+    .screen5 .left .img3 {
+        width: 65%;
+    }
+
+    .screen9 .div {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .screen9 .div .left img {
+        border-radius: 0%;
+    }
+
+    .screen9 .div .bottom .right a {
+        margin-top: 1em;
+    }
+
+    .screen10 .three .content {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .screen10 .three .content .card {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:720px) {
+    .screen1 {
+        display: flex;
+        flex-direction: column;
         padding: .1em;
         padding-bottom: 2em;
     }
@@ -1921,6 +1981,86 @@ footer p {
         width: 100%;
         border-radius: 0;
     }
+
+    .screen1 .left .img2,
+    .screen1 .left .img3 {
+        width: 11em;
+    }
+
+    .right a {
+        margin: 0 auto;
+        font-size: 20px;
+        padding: .8em 1.2em;
+    }
+
+    .right .mess {
+        margin: 0 auto;
+    }
+
+    .right .title h2 {
+        font-size: 45px;
+    }
+
+    .right p {
+        font-size: 18px;
+    }
+
+    .screen3 h1 {
+        font-size: 45px;
+        margin-top: .5em;
+    }
+
+    .screen5 .right a {
+        margin-top: 3em;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .screen6 .top h1 {
+        font-size: 50px;
+    }
+
+
+
+    .screen7 .left h1 {
+        font-size: 45px;
+    }
+
+    .screen7 .right .top .img1 {
+        width: 70%;
+        left: 3em;
+        rotate: 145deg;
+    }
+
+    .screen7 .right .top .img2 {
+        width: 70%;
+        right: -3em;
+    }
+
+    .screen9 .div .right .bottom a {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+
+}
+
+@media (max-width : 700px) {
+
+    .screen1 {
+        width: 100%;
+    }
+
+    .logo-btn {
+        padding: .5em;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .logo-btn .logo img {
+        width: 7em;
+    }
+
 
     .screen1 .left .img2 {
         width: 7em;
@@ -2003,7 +2143,7 @@ footer p {
 
     .screen5 .left .img2,
     .screen5 .left .img3 {
-        display: none;
+        width: 55%;
     }
 
     .screen5 .right .top h1 {
@@ -2187,12 +2327,17 @@ footer p {
 
     .screen11 .part1 .search {
         display: flex;
-        gap: .5em;
+        gap: 2em;
         justify-content: center;
+        align-items: center;
     }
 
     .screen11 .part1 .search select {
         width: 100%;
+    }
+
+    .screen11 .part1 .search .inp_search {
+        margin-top: 1.2em;
     }
 
     .screen11 .part1 .search input {
@@ -2209,15 +2354,87 @@ footer p {
         border: 1.5px solid #4D3975;
         border-radius: 13px;
     }
+}
 
-    .form {
-        width: 95%;
-        left: 2.5%;
+@media (max-width : 600px) {
+
+    .fixed {
+        width: 100%;
     }
 
-    .screen11 .part2 .form2 {
-        position: absolute;
-        width: 100%;
-        left: 1.5%;
+    .screen9 {
+        padding: .6em;
+        padding-bottom: 1.5em;
+    }
+
+    .screen9 .div {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        padding-top: .8em;
+    }
+
+    .screen9 h1 {
+        margin-top: .9em;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+
+    .screen9 .div .left img {
+        border-radius: 0;
+    }
+
+    .screen9 .div .right .top p {
+        text-align: left;
+    }
+
+    .screen9 .div .right .bottom {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .screen10 .three .content .card {
+        width: 80%;
+        margin: 0 auto;
     }
 }
+
+@media (max-width : 450px) {
+
+    body {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .fixed {
+        width: 100%;
+    }
+
+    .screen11 .part1 .pagination {
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .screen11 .part1 .pagination div {
+        gap: 1em;
+    }
+
+    .screen11 .part1 .pagination div .active {
+        padding: .3em .5em;
+        font-size: 16px;
+    }
+
+    .screen11 .part1 .pagination div p:hover {
+        padding: .3em .5em;
+        font-size: 16px;
+    }
+
+    .screen11 .part1 .content .box_c {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: start;
+    }
+}
+
+/* RESPONSIVE END */
